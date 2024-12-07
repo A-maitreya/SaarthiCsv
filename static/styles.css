@@ -1,0 +1,203 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    /*background-color: rgb(129, 129, 129);  */
+    background-image: url('https://i.postimg.cc/PxvBX1HZ/6346166.jpg'); /*add bg image in result page*/
+    color: #333;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px; /* Padding to prevent overlap with fixed header */
+}
+
+/* Header (Strip on Top) */
+header {
+    background-color: #262626a5;
+    color: #fefefe;
+    text-align: right;
+    padding: 0em 0;
+    font-size: 0.9em;
+    position: fixed;
+    top: 0; /* Start at the top */
+    left: 0; /* Start from the left */
+    width: 100vw; /* Full viewport width */
+    z-index: 999; /* Ensure it stays above other elements */
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    opacity: 0.8;
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Available Routes */
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* CTA Button */
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #7aaab6;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #928552;
+}
+
+/* Travel Destination Section */
+.travel-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    padding: 3em 0;
+}
+
+.travel-card {
+    background-color: #764040;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    max-width: 300px;
+}
+
+.travel-card:hover {
+    transform: scale(1.05);
+}
+
+.travel-card img {
+    width: 100%;
+    height: auto;
+}
+
+.travel-card h3 {
+    font-size: 1.5em;
+    margin: 1em 0 0.5em;
+    padding: 0 1em;
+}
+
+.travel-card p {
+    padding: 0 1em 1.5em;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #000000dc;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 0;
+    font-size: 0.9em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+/* Feedback Form Styles */
+.feedback-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.feedback-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.feedback-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-container label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.feedback-container input[type="text"],
+.feedback-container input[type="email"],
+.feedback-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.feedback-container button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-container button:hover {
+    background-color: #218838;
+}

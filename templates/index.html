@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAARTHI - Your Travel Companion</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-bg: rgba(255, 255, 255, 0.9);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('https://i.postimg.cc/PxvBX1HZ/6346166.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: rgba(44, 62, 80, 0.8);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin-right: 1rem;
+        }
+
+        .logo h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .auth-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .auth-links a:hover {
+            color: var(--accent-color);
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            background-color: var(--light-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .container:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        .search-container {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #fff;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+
+        select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #fff;
+            transition: border-color 0.3s ease;
+            margin-top: 0.5rem;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: var(--accent-color);
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo {
+                margin-bottom: 1rem;
+            }
+
+            .auth-links {
+                margin-top: 1rem;
+            }
+
+            .container {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://i.postimg.cc/23phJXf1/Saarthi-logo-image.png" alt="SAARTHI Logo">
+            <h1>SAARTHI</h1>
+        </div>
+        <nav class="auth-links">
+            <a href="/login">Login</a>
+            <a href="/signup">Sign Up</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Discover Your Ideal Route</h2>
+            <form action="/results" method="POST">
+                <label for="city">Enter or select your destination:</label>
+                <div class="search-container">
+                    <input type="text" id="citySearch" name="city" placeholder="Search...">
+                    <select id="citySelect" size="5" style="display: none;">
+                        <option value="New York">New York</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Haridwar">Haridwar</option>
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="Miami">Miami</option>
+                        <option value="Seattle">Seattle</option>
+                        <option value="Boston">Boston</option>
+                        <option value="Las Vegas">Las Vegas</option>
+                        <option value="Houston">Houston</option>
+                    </select>
+                </div>
+                <button type="submit">Find Best Route</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Saarthi Group | <a href="/feedback" title="Leave feedback or suggestion for route changes">Feedback</a></p>
+    </footer>
+
+    <script>
+        const citySearch = document.getElementById('citySearch');
+        const citySelect = document.getElementById('citySelect');
+        const originalOptions = Array.from(citySelect.options);
+
+        citySearch.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const filteredOptions = originalOptions.filter(option => 
+                option.text.toLowerCase().includes(searchTerm)
+            );
+
+            citySelect.innerHTML = '';
+            filteredOptions.forEach(option => citySelect.add(option.cloneNode(true)));
+            
+            citySelect.style.display = filteredOptions.length > 0 ? 'block' : 'none';
+        });
+
+        citySelect.addEventListener('change', function() {
+            citySearch.value = this.value;
+            this.style.display = 'none';
+        });
+
+        document.addEventListener('click', function(e) {
+            if (e.target !== citySearch && e.target !== citySelect) {
+                citySelect.style.display = 'none';
+            }
+        });
+
+        citySearch.addEventListener('focus', function() {
+            if (citySelect.options.length > 0) {
+                citySelect.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
