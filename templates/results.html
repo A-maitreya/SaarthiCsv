@@ -34,10 +34,15 @@
             color: white;
             text-align: center;
             padding: 1rem 0;
+            background-color: rgba(44, 62, 80, 0.8);
         }
 
         h1 {
             font-size: 2.5rem;
+        }
+        
+        .header {
+            background-color: rgba(44, 62, 80, 0.8);
         }
 
         .container {
@@ -72,12 +77,13 @@
 
         .route-info {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column; /* Stack children vertically */
+            align-items: flex-start; /* Align text to the left */
         }
 
         .route-detail {
             margin: 0.5rem 0;
+            align-items: flex-start;
         }
 
         .route-button {
@@ -113,8 +119,8 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Routes for {{ city }}</h1>
+    <header class="header">
+        <center><h1>Routes for {{ city }} Famous Tourist Spots</h1></center>
     </header>
     <div class="container">
         <h2>Available Routes:</h2>
@@ -123,12 +129,11 @@
                 <li class="route-card">
                     <div class="route-info">
                         <div class="route-detail"><strong>Route:</strong> {{ route[0] }}</div>
-                        <div class="route-detail"><strong>Cost:</strong> ${{ route[1] }}</div>
-                        <div class="route-detail"><strong>Time:</strong> {{ route[2] }}</div>
+                        <div class="route-detail"><strong>Famous Hotspot of City:</strong> {{ route[1] }} <a href="{{ route[4] }}" target="_blank">#</a></div>
+                        <div class="route-detail"><strong>Nearest To Connectivity:</strong> {{ route[2] }} <a href="{{ route[5] }}" target="_blank">#</a></div>
                     </div>
-                    <div class="route-detail"><center>
-                        <a href="{{ route[3] }}" class="route-button" target="_blank">View Route Map</a>
-                    </center>
+                    <div class="route-detail">
+                        <a href="{{ route[3] }}" class="route-button" target="_blank">View Route On Map</a>
                     </div>
                 </li>
             {% endfor %}

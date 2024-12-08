@@ -1,6 +1,3 @@
-city,route_name,cost,time,link
-New York,Route 1,10,30,http://example.com/route1
-New York,Route 2,15,45,http://example.com/route2
-Los Angeles,Route 1,12,35,http://example.com/route3
-Los Angeles,Route 2,18,50,http://example.com/route4
-Haridwar,Route3,34,34,https://maps.app.goo.gl/xf9APPT9AKhKBoKf7
+city,route_name,Famous Hotspot of City,Nearest To Connectivity,link,Hotspot Link,Nearest To Connectivity
+Haridwar,Main Route,Ranipur Mod,Bhagwan Valmiki Chowk,https://maps.app.goo.gl/xf9APPT9AKhKBoKf7,https://maps.app.goo.gl/Stb7ZCW7zDmwmVh2A,https://maps.app.goo.gl/e6KmEoGoJAaibfNY7
+Haridwar,Vai Har Ki Pauri,Har Ki Pauri,Bhagwan Valmiki Chowk,https://maps.app.goo.gl/xf9APPT9AKhKBoKf7,https://maps.app.goo.gl/ABvRjgiYgWXQtQpn7,https://maps.app.goo.gl/e6KmEoGoJAaibfNY7
