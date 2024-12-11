@@ -1,3 +1,7 @@
-city,route_name,Famous Hotspot of City,Nearest To Connectivity,link,Hotspot Link,Nearest To Connectivity
-Haridwar,Main Route,Ranipur Mod,Bhagwan Valmiki Chowk,https://maps.app.goo.gl/xf9APPT9AKhKBoKf7,https://maps.app.goo.gl/Stb7ZCW7zDmwmVh2A,https://maps.app.goo.gl/e6KmEoGoJAaibfNY7
-Haridwar,Vai Har Ki Pauri,Har Ki Pauri,Bhagwan Valmiki Chowk,https://maps.app.goo.gl/xf9APPT9AKhKBoKf7,https://maps.app.goo.gl/ABvRjgiYgWXQtQpn7,https://maps.app.goo.gl/e6KmEoGoJAaibfNY7
+City,Route_Name,Famous Hotspot of City,Nearest To Connectivity,Route Link,Hotspot Link,Nearest To Connectivity Link,,,
+Haridwar,Religious ,Har Ki Pauri,Bhagwan Valmiki Chowk,https://maps.app.goo.gl/2JbJgFH5wdSHwj3W6,https://maps.app.goo.gl/XSNCyQmfV7zxm2FJ6,https://maps.app.goo.gl/1gvrrA1y5j7fTTkYA,,,
+Haridwar,Exploration ,Ranipur Mod,Bhagwan Valmiki Chowk,https://maps.app.goo.gl/tnjrvQRLcXTXy64M8,https://maps.app.goo.gl/XSNCyQmfV7zxm2FJ6,https://maps.app.goo.gl/1gvrrA1y5j7fTTkYA,,,
+Lucknow,Religious ,Ganta Ghar,Sitapur Road,https://maps.app.goo.gl/KQbnxTfGN9Xwt5va9,https://maps.app.goo.gl/Tj1Lbk1495i18EQSA,https://maps.app.goo.gl/HuV4huDdL1Hj38d4A,,,
+Lucknow,Exploration ,Ganta Ghar,Sitapur Road,,https://maps.app.goo.gl/Tj1Lbk1495i18EQSA,https://maps.app.goo.gl/HuV4huDdL1Hj38d4A,,,
+Mathura,Vai Vrindadan,Vrindavan,Grand Trunk Road,https://maps.app.goo.gl/FVGGJYusfyLgGWKc9,https://maps.app.goo.gl/ZBVjwuGLMZCd2niE7,https://maps.app.goo.gl/GayuropRJ4qLMd7Z6,,,
+Mathura,Vai Barsana,Barsana,Grand Trunk Road,https://maps.app.goo.gl/jMRfqEiyh7okUwBs6,https://maps.app.goo.gl/ZBVjwuGLMZCd2niE7,https://maps.app.goo.gl/GayuropRJ4qLMd7Z6,,,
